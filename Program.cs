@@ -7,19 +7,19 @@ namespace natural_primer_fibonacci_counters
     {
         static void Main(string[] args)
         {
-            foreach (var num in createNatural(100))
+            foreach (var num in createNatural(5))
             {
                 Console.WriteLine(num);
             }
 
             Console.WriteLine("");
-            foreach (var fibo in createFibonacci(20))
+            foreach (var fibo in createFibonacci(2))
             {
                 Console.WriteLine(fibo);
             }
 
             Console.WriteLine("");
-            foreach (var prime in createPrime(25))
+            foreach (var prime in createPrime(10))
             {
                 Console.WriteLine(prime);
             }
@@ -53,7 +53,7 @@ namespace natural_primer_fibonacci_counters
             {
                 for (int k = 2; k < Math.Sqrt(i) + 1; k++)
                 {
-                    if (i%k == 0)
+                    if (i%k == 0 & i != 2)
                     {
                         break;
                     }
